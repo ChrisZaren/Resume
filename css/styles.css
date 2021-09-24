@@ -19,6 +19,18 @@ body {
   -webkit-transform-style: preserve-3d;
 }
 
+.head-text {
+  color: #046A38;
+}
+
+.subhead-text {
+  color: darkblue;
+}
+
+.desc-text {
+  color: black;
+}
+
 /* From Top to Bottom */
 div.parallax {
   text-align: center;
@@ -79,7 +91,7 @@ div.content-outer {
 .content-inner {
   font-family: 'Nunito', sans-serif;
   text-align: center;
-  padding: 5% 2%;
+  padding: 2% 5% 0 5%;
   background-image: linear-gradient(#F9F7F7, #DBE2EF)
 }
 
@@ -91,7 +103,7 @@ div.content-outer {
   text-align: right;
 }
 
-.tindogimg, .miamiglowimg {
+.tindogimg, .miamiglowimg, .emichimg, .cueterimg {
   height: 100%;
   width: 100%;
   border-style: solid;
@@ -107,10 +119,24 @@ div.content-outer {
 
 .container-journey {
   text-align: center;
+  font-family: 'Nunito', sans-serif;
+  padding: 2% 2%;
   background-image: linear-gradient(#DBE2EF, #F9F7F7)
 }
 
 .container-footer {
   text-align: center;
-  background-color: #F9F7F7;
+  background-color:#CFCFDD;
+  font-size: 3em;
+  margin-left: 5%;
+  padding: 2% 5% 0 5%;
+}
+
+.work-row {
+  padding-top: 2%;
+}
+
+/* SPACING BETWEEN a ELEMENTS */
+a + a {
+  margin-left: 20px;
 }
