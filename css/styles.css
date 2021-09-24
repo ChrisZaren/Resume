@@ -1,0 +1,116 @@
+/* General */
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* From Top to Bottom */
+div.parallax {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+div.parallax:after {
+  background-image: url(../images/ChrisZPaintballCrop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  content: "";
+  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+}
+
+.title-row {
+  color: white;
+  padding-top: 300px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.title-name {
+  background-color: #112D4E;
+  border-radius: 25px;
+}
+
+.hey, .name {
+  font-family: 'Nunito', sans-serif;
+}
+
+.hey {
+  font-style: italic;
+  font-size: 4em;
+}
+
+.name {
+  font-size: 5em;
+}
+
+div.content-outer {
+  width: 100%;
+  perspective: 2px;
+  -webkit-perspective: 2px;
+}
+
+.content-inner {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding: 5% 2%;
+  background-image: linear-gradient(#F9F7F7, #DBE2EF)
+}
+
+.project-row {
+  padding: 10px;
+}
+
+.imgbox {
+  text-align: right;
+}
+
+.tindogimg, .miamiglowimg {
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
+}
+
+.project-text {
+  position: relative;
+  text-align: left;
+  padding: 0% 3%;
+}
+
+.container-journey {
+  text-align: center;
+  background-image: linear-gradient(#DBE2EF, #F9F7F7)
+}
+
+.container-footer {
+  text-align: center;
+  background-color: #F9F7F7;
+}
